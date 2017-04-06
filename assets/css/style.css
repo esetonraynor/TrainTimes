@@ -1,0 +1,14 @@
+.masthead {
+	background-image:url(../images/railroad.png);
+	color:white;
+	padding:30px;
+	height:30%;
+}
+
+.trainSchedule {
+	margin:30px;
+}
+
+.addTrain {
+	margin:30px;
+}

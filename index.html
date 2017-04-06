@@ -1,0 +1,72 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Train Times Predictions</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	
+<div class="jumbotron masthead">
+  <h1>Trains in Minutes</h1>
+  <p>Where the trains run like clockwork</p>
+</div>
+
+<div class="panel panel-default trainSchedule">
+  <div class="panel-heading">
+    <h3 class="panel-title">Saved Trains</h3>
+  </div>
+  <div class="panel-body">
+    <div class="table-responsive">
+  <table class="table">
+    <thead>
+    	<tr>
+    		<th>Train Name</th>
+    		<th>Destination</th>
+    		<th>Frequency in Minutes</th>
+    		<th>Next Arrival</th>
+    		<th>Minutes Away</th>
+    	</tr>
+    </thead>
+    <tbody>
+    	
+    </tbody>
+  </table>
+</div>
+  </div>
+</div>
+
+<div class="panel panel-default addTrain">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add Train</h3>
+  </div>
+  <div class="panel-body">
+    <form>
+	  <div class="form-group">
+	    <label for="name">Train Name</label>
+	    <input type="text" class="form-control" id="name" placeholder="">
+	  </div>
+	  <div class="form-group">
+	    <label for="destination">Destination</label>
+	    <input type="text" class="form-control" id="destination" placeholder="">
+	  </div>
+	  <div class="form-group">
+	    <label for="firstTime">First Train Time of the Day (HH:mm--military time)</label>
+	    <input type="text" class="form-control" id="firstTime" placeholder="">
+	  </div>
+	  <div class="form-group">
+	    <label for="frequency">Frequency (in minutes)</label>
+	    <input type="text" class="form-control" id="frequency" placeholder="">
+	  </div>
+ 	<button type="submit" class="btn btn-primary" id="button">Add Your Train!</button>
+</form>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+<script src="assets/javascript/trains.js"></script>
+
+</body>
+</html>
